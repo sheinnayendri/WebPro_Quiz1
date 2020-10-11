@@ -1,0 +1,72 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/simple-sidebar.css" rel="stylesheet">    
+
+    <style type="text/css">
+      h1, h4, h5 {
+          text-align:center;
+          font-family:cursive;
+          font-weight: 1000;
+      }
+      h1 span, h4 span, h5 span {
+          /* -webkit-text-stroke:white;
+          -webkit-text-stroke-width: 0.3px; */
+          /* /* text-shadow:0.5px 0.5px slategrey; */
+      }
+    </style>
+
+    <title>Quiz 1</title>
+  </head>
+  <body>
+    <div class="d-flex" id="wrapper">
+
+        <!-- Sidebar -->
+        <div class="bg-light border-right" id="sidebar-wrapper">
+          <div class="sidebar-heading"><a href="/quiz1/" class="list-group-item list-group-item-action bg-light">Homepage</a></div>
+          <div class="list-group list-group-flush">
+            <a href="profile" class="list-group-item list-group-item-action bg-light">Profile</a>
+            <a href="hometown" class="list-group-item list-group-item-action bg-light">Hometown</a>
+            <a href="food" class="list-group-item list-group-item-action bg-light">Food</a>
+            <a href="tourist" class="list-group-item list-group-item-action bg-light">Tourist</a>
+          </div>
+        </div>
+        <!-- /#sidebar-wrapper -->
+    
+        <!-- Page Content -->
+        <div id="page-content-wrapper" style="background-image: url('sby2.jpg'); background-attachment: fixed; background-size: cover;">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+            <button class="btn btn-primary" id="menu-toggle">Menu</button>
+          </nav>
+          <br>
+          <h1><span>My Profile</span></h1>
+          <br>
+          <h5><span><strong>In this profile section, I'll tell some basic information about myself.<br>
+            My full name is Sheinna Yendri. My friends usually call me Sheinna.<br>
+            I was born on November 13th, 2000 (this means I'll be 20 in no time).<br>
+            Currently I'm pursuing my bachelor degree in Institut Teknologi Sepuluh Nopember, Informatics major.<br>
+            I chose this major since I'm really into programming, especially competitive programming.<br>
+            I'm in my fifth semester at this moment, and in this semester I take Web Programming as one of my courses.<br>
+            And that's the main reason this website exists actually, cause this website is for fulfilling my first quiz.<br>
+            Anyway thanks for reading my profile. Hope you enjoy knowing a bit about me! ^^
+          </strong></span></h5>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+        $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+        });
+    </script>
+
+  </body>
+</html>

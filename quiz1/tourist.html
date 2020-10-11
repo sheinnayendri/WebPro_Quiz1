@@ -1,0 +1,94 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/simple-sidebar.css" rel="stylesheet">    
+
+    <style type="text/css">
+        td {
+            font-size: small;
+            text-align: center;
+        }
+        h1, h4, h5 {
+            text-align:center;
+            font-family:cursive;
+            font-weight: 1000;
+        }
+        h1 span, h4 span, h5 span {
+            /* -webkit-text-stroke:white;
+            -webkit-text-stroke-width: 0.7px;
+            text-shadow:1px 1px slategrey; */
+        }
+    </style>
+
+    <title>Quiz 1</title>
+  </head>
+  <body>
+    <div class="d-flex" id="wrapper">
+
+        <!-- Sidebar -->
+        <div class="bg-light border-right" id="sidebar-wrapper">
+          <div class="sidebar-heading"><a href="/quiz1/" class="list-group-item list-group-item-action bg-light">Homepage</a></div>
+          <div class="list-group list-group-flush">
+            <a href="profile" class="list-group-item list-group-item-action bg-light">Profile</a>
+            <a href="hometown" class="list-group-item list-group-item-action bg-light">Hometown</a>
+            <a href="food" class="list-group-item list-group-item-action bg-light">Food</a>
+            <a href="tourist" class="list-group-item list-group-item-action bg-light">Tourist</a>
+          </div>
+        </div>
+        <!-- /#sidebar-wrapper -->
+    
+        <!-- Page Content -->
+        <div id="page-content-wrapper" style="background-image: url('sby2.jpg'); background-attachment: fixed; background-size: cover;">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+            <button class="btn btn-primary" id="menu-toggle">Menu</button>
+          </nav>
+          <br>
+          <h1><span>Tourist Places</span></h1>
+          <br>
+          <h5><span><strong>
+              Surabaya maybe is not as well known on the tourist trails as other cities in Indonesia,<br>
+              although it is actually the second largest city in Indonesia, after Jakarta.<br>
+              In Surabaya, there are also a range of interesting attractions that make it worth spending<br>
+              some time here if you are travelling around Java!<br>
+              So, if you ever come to Surabaya, I'll strongly recommend you to visit these places:
+          </strong></span></h5>
+          <table align="center" cellpadding=5>
+              <tr>
+                  <td><img src="monkasel.jpg" alt="Monkasel" width=200px height=150px></td>
+                  <td><img src="tamanbungkul.jpg" alt="Taman Bungkul" width=200px height=150px></td>
+                  <td><img src="suramadu.jpg" alt="Suramadu" width=200px height=150px></td>
+              </tr>
+              <tr>
+                  <td align="center"><span><strong>Monumen Kapal Selam</strong></span></td>
+                  <td align="center"><span><strong>Taman Bungkul</strong></span></td>
+                  <td align="center"><span><strong>Suramadu National Bridge</strong></span></td>
+              </tr>
+          </table>
+          <br>
+          <h5><span><strong>
+              In Monkasel (Monumen Kapal Selam), you can join the tour and experience what a Russian submarine actually look like,<br>
+              both from inside and outside. If you just want a relaxing activity, you can go for a stroll in Taman Bungkul.<br>
+              The scenery is nice and refreshing, however it gets quite busy in the evenings, so better go in the afternoon<br>
+              if you don't like crowds. You can also check out the Suramadu National Bridge, if you walk along the waterfront<br>
+              of the city, you can take in the majesty of the bridge and at night, the view is mesmerizing because of the colorful lights.<br>
+        </strong></span></h5>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+        $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+        });
+    </script>
+
+  </body>
+</html>
